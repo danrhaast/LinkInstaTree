@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel F.</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            color: #FFFFFF; /* Texto branco para contraste */
+            color: #FFFFFF;
+            /* Texto branco para contraste */
             display: flex;
             flex-direction: column;
             align-items: center;
             min-height: 100vh;
             position: relative;
-            overflow: hidden; /* Para garantir que o vídeo não cause scroll */
+            overflow: hidden;
+            /* Para garantir que o vídeo não cause scroll */
         }
 
         video {
@@ -25,10 +30,12 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
-            z-index: -1; /* Atrás do conteúdo */
+            z-index: -1;
+            /* Atrás do conteúdo */
             autoplay: true;
             loop: true;
-            muted: true; /* Necessário para autoplay em muitos navegadores */
+            muted: true;
+            /* Necessário para autoplay em muitos navegadores */
         }
 
         .profile-pic {
@@ -36,20 +43,27 @@
             height: 150px;
             border-radius: 50%;
             margin-top: 50px;
-            border: 5px solid #000000; /* Borda preta */
+            border: 5px solid #000000;
+            /* Borda preta */
             object-fit: cover;
-            transition: border-color 0.3s; /* Transição suave para hover */
+            transition: border-color 0.3s;
+            /* Transição suave para hover */
         }
 
         .profile-pic:hover {
-            border-color: #FFFFFF; /* Hover para branco */
+            border-color: #FFFFFF;
+            /* Hover para branco */
         }
 
         .name {
+            font-family: "Audiowide", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             margin-top: 20px;
-            font-size: 2em;
+            font-size: 1.5em;
             text-align: center;
-            color: #ffffff; /* Preto para o nome */
+            color: #ffffff;
+            /* Preto para o nome */
             text-shadow: 1px 2px 2px black;
         }
 
@@ -67,32 +81,74 @@
             padding: 15px;
             text-align: center;
             text-decoration: none;
-            color: #FFFFFF; /* Texto branco */
-            background: #000000; /* Fundo preto */
+            color: #FFFFFF;
+            /* Texto branco */
+            background: #000000;
+            /* Fundo preto */
             border-radius: 25px;
             transition: background-color 0.3s, color 0.3s, transform 0.3s, box-shadow 0.3s;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
         .button:hover {
-            background: #FFFFFF; /* Hover para branco */
-            color: #000000; /* Texto preto no hover */
+            background: #FFFFFF;
+            /* Hover para branco */
+            color: #000000;
+            /* Texto preto no hover */
             transform: scale(1.05);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
         }
+
+        .professions {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .profession-box {
+            background: rgba(0, 0, 0, 0.5); /* Preto semi-transparente */
+            color: #FFFFFF; /* Texto branco */
+            padding: 10px 15px;
+            border-radius: 10px;
+            font-size: 0.8em;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .profession-box:hover {
+            background: rgba(255, 255, 255, 0.5); /* Hover semi-transparente branco para contraste */
+        }
     </style>
 </head>
+
 <body>
-    <video src="/img/BG linktree.mp4" autoplay loop muted></video> <!-- Substitua pela URL do seu vídeo de fundo (ex: um vídeo de pôr do sol) -->
-    <img src="/img/IMG_20230914_213143_282.jpg" alt="Foto de Perfil" class="profile-pic"> <!-- Substitua pela URL da sua foto -->
-    <div class="name">Daniel Ferraz dos Santos</div> <!-- Substitua pelo seu nome -->
+    <video src="/img/BG linktree.mp4" autoplay loop muted></video>
+    <!-- Substitua pela URL do seu vídeo de fundo (ex: um vídeo de pôr do sol) -->
+    <img src="/img/IMG_20230914_213143_282.jpg" alt="Foto de Perfil" class="profile-pic">
+    <!-- Substitua pela URL da sua foto -->
+    <div class="name">DANIEL FERRAZ</div> <!-- Substitua pelo seu nome -->
+    <div class="professions">
+        <div class="profession-box">Desenvolvedor Web</div>
+        <div class="profession-box">Analista de Sistemas</div> <!-- Substitua pelas suas profissões -->
+        <div class="profession-box">Técnico de Informática</div>
+        <div class="profession-box">Professor de Música</div>
+        <div class="profession-box">Músico Instrumentista</div>
+        <!-- Adicione mais caixinhas conforme necessário -->
+    </div>
     <div class="buttons">
-        <a href="https://danrhaast.github.io/portfolioUninterDaniel/" target="_blank" class="button">Portfólio</a> <!-- Substitua # pela URL do seu portfólio -->
-        <a href="#" target="_blank" class="button">Meus Trabalhos</a> <!-- Substitua # pela URL dos seus trabalhos -->
-        <a href="https://github.com/danrhaast" target="_blank" class="button">Github</a> <!-- Substitua # pela URL do seu GitHub -->
-        <a href="https://www.instagram.com/danielrock666/" target="_blank" class="button">Instagram</a> <!-- Substitua # pela URL do seu Instagram -->
-        <a href="https://www.linkedin.com/in/daniel-ferraz-90a7a3283/" class="button">LinkedIn</a> <!-- Substitua # pela URL do seu LinkedIn -->
-        <a href="https://wa.me/555492029984?text=Olá%20Daniel,%20gostaria%20de%20conversar%20sobre%20os%20seus%20serviços!%20" target="_blank" class="button">WhatsApp</a> <!-- Substitua # por um link do WhatsApp, ex: https://wa.me/5511999999999 -->
+        <a href="https://danrhaast.github.io/portfolioUninterDaniel/" target="_blank" class="button">Portfólio</a>
+        <!-- Substitua # pela URL do seu portfólio -->
+        <a href="#" target="_blank" class="button">Meus Trabalhos <br>(Em desenvolvimento)</a> <!-- Substitua # pela URL dos seus trabalhos -->
+        <a href="https://github.com/danrhaast" target="_blank" class="button">Github</a>
+        <!-- Substitua # pela URL do seu GitHub -->
+        <a href="https://www.instagram.com/danielrock666/" target="_blank" class="button">Instagram</a>
+        <!-- Substitua # pela URL do seu Instagram -->
+        <a href="https://www.linkedin.com/in/daniel-ferraz-90a7a3283/" class="button">LinkedIn</a>
+        <!-- Substitua # pela URL do seu LinkedIn -->
+        <a href="https://wa.me/555492029984?text=Olá%20Daniel,%20gostaria%20de%20conversar%20sobre%20os%20seus%20serviços!%20"
+            target="_blank" class="button">WhatsApp</a>
+        <!-- Substitua # por um link do WhatsApp, ex: https://wa.me/5511999999999 -->
     </div>
 </body>
+
 </html>
