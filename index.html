@@ -18,11 +18,11 @@
             font-family: Arial, sans-serif;
             color: #FFFFFF;
             /* Texto branco para contraste */
-            display: flex;
-            flex-direction: column;
-            align-items: center;    
-            position: relative;
-            overflow: hidden;
+            /*display: flex;*/
+            /*flex-direction: column;*/ 
+            /*align-items: center;    */
+            /*position: relative;*/
+            /*overflow: hidden;*/
             /* Para garantir que o vídeo não cause scroll */
         }
 
@@ -34,6 +34,12 @@
             height: 100%;
             object-fit: cover;
             z-index: -1;
+        }
+
+        .img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .profile-pic {
@@ -123,7 +129,9 @@
 <body>
     <video src="/img/BG linktree.mp4" autoplay loop muted></video>
     <!-- Substitua pela URL do seu vídeo de fundo (ex: um vídeo de pôr do sol) -->
-    <img src="/img/IMG_20230914_213143_282.jpg" alt="Foto de Perfil" class="profile-pic">
+    <div class="img">
+        <img src="/img/IMG_20230914_213143_282.jpg" alt="Foto de Perfil" class="profile-pic">
+    </div>
     <!-- Substitua pela URL da sua foto -->
     <div class="name">DANIEL FERRAZ</div> <!-- Substitua pelo seu nome -->
     <div class="professions">
